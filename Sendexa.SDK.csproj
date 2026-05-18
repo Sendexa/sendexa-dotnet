@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>10</LangVersion>
+
+    <PackageId>Sendexa.SDK</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Sendexa Limited</Authors>
+    <Description>Official Sendexa .NET SDK — SMS, OTP, WhatsApp, Email, Voice, and Webhooks</Description>
+    <PackageTags>sendexa;sms;otp;whatsapp;messaging;ghana;api;sdk</PackageTags>
+    <PackageProjectUrl>https://docs.sendexa.co/sdks/dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sendexa/sendexa-dotnet</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- Zero runtime dependencies — only the .NET 6 SDK is required -->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" Condition="'$(Configuration)'=='Test'" />
+    <PackageReference Include="xunit"                  Version="2.7.0"  Condition="'$(Configuration)'=='Test'" />
+  </ItemGroup>
+
+</Project>
